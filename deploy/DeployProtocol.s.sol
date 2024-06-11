@@ -20,9 +20,9 @@ contract DeployProtocol is Script {
         uint256 DEPLOYER_PRIVATE_KEY = vm.envUint("DEPLOYER_PRIVATE_KEY");
 
         IUniswapV3Factory UNISWAP_V3_FACTORY = IUniswapV3Factory(
-            vm.envAddress("UNISWAP_V3_FACTORY")
+            vm.envAddress("UNISWAP_V3_FACTORY") // custom
         );
-        address WETH9 = vm.envAddress("WETH9");
+        address WETH9 = vm.envAddress("WETH9"); // custom
 
         vm.startBroadcast(DEPLOYER_PRIVATE_KEY);
 
